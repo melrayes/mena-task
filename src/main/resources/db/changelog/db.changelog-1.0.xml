@@ -14,8 +14,25 @@
     </changeSet>
     <changeSet author="mostafa" id="insert_news">
 		<insert tableName="news">
-			<column name="title">How to boil an egg</column>
-			<column name="content">Get a bowl and heat the water to reach boiling point. Put chicken egg for approximately 10 minutes.</column>
+            <column name="date">2018-05-03 23:11:32</column>
+			<column name="title">title 1</column>
+			<column name="content">content 1.</column>
+            <column name="description">description 1.</column>
 		</insert>
-	</changeSet>
+
+        <insert tableName="news">
+            <column name="date">2018-05-05 23:11:32</column>
+            <column name="title">title 2</column>
+            <column name="content">content 2.</column>
+            <column name="description">description 2.</column>
+        </insert>
+
+        <insert tableName="news">
+            <column name="date">2018-05-07 23:11:32</column>
+            <column name="title">title 3</column>
+            <column name="content">content 3.</column>
+            <column name="description">description 3.</column>
+        </insert>
+
+    </changeSet>
 </databaseChangeLog>
