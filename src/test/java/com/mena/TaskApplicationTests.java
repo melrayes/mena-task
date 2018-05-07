@@ -1,16 +1,26 @@
 package com.mena;
 
+import com.mena.controller.NewsController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@ActiveProfiles("test")
 public class TaskApplicationTests {
 
-	@Test
-	public void contextLoads() {
-	}
+    @Autowired
+    NewsController newsController;
+
+    @Test
+    public void contextLoads() {
+        assertThat(newsController).isNotNull();
+    }
 
 }
