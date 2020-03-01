@@ -1,5 +1,5 @@
-Create simple REST API for news. Each entity should contain the following information: id, date, title, short description, text.
-All requests and responses should be in JSON. 
-API results should be sortable by date and/or title. 
-API results may be filtered by date and/or title.
-You can use a framework and database on your choice.
+A simple news REST API. Each entity contains the following information: id, date, title, short description, text.
+All requests and responses are in JSON. 
+API results are sortable by date and/or title. 
+API results are filtered by date and/or title.
+
